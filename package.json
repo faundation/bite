@@ -1,0 +1,32 @@
+{
+  "name": "osi-erp",
+  "displayName": "OSI ERP",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@vueuse/head": "^0.2.3",
+    "vue": "^3.0.5",
+    "vue-router": "^4.0.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.4.0",
+    "@types/node": "^14.14.31",
+    "@vitejs/plugin-vue": "^1.1.4",
+    "@vue/compiler-sfc": "^3.0.5",
+    "autoprefixer": "^10.2.4",
+    "postcss": "^8.2.6",
+    "postcss-advanced-variables": "^3.0.1",
+    "postcss-nested": "^5.0.3",
+    "postcss-nested-ancestors": "^2.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "tailwindcss": "^2.0.3",
+    "typescript": "^4.1.3",
+    "vite": "^2.0.1",
+    "vite-svg-loader": "^1.4.2"
+  }
+}

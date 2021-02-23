@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind screens;
+
+@layer utilities {
+  .bg-blur-2xl {
+    backdrop-filter: blur(5em);
+  }
+
+  .bg-blur-xl {
+    backdrop-filter: blur(2.5em);
+  }
+
+  .bg-blur-lg {
+    backdrop-filter: blur(2em);
+  }
+
+  .bg-blur-md {
+    backdrop-filter: blur(1em);
+  }
+
+  .bg-blur-sm {
+    backdrop-filter: blur(0.75em);
+  }
+
+  .bg-blur-xs {
+    backdrop-filter: blur(0.5em);
+  }
+}
+
+body {
+  font-size: 16px;
+}
+
+* {
+  &:focus {
+    @apply outline-none;
+  }
+}
