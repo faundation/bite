@@ -27,32 +27,22 @@ module.exports = {
     );
     rule.test = /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|ttf|woff|woff2|cur|ani)(\?.*)?$/;
 
-    return {
-      ...config,
-      watchOptions: {
-        aggregateTimeout: 200,
-        poll: 1000,
-        ignored: [/node_modules/, /dist/],
-      },
-      devtool: "eval",
-      resolve: {
-        ...config.resolve,
-        alias: {
-          ...config.resolve.alias,
-          "#": resolve(__dirname, "../src/assets/"),
-          "@": resolve(__dirname, "../src/"),
-        },
-      },
-      module: {
-        ...config.module,
-        rules: [
-          ...config.module.rules,
-          {
-            test: /\.svg$/i,
-            use: ["vue-loader", "vue-svg-loader"],
-          },
-        ],
-      },
+    config.watchOptions = {
+      aggregateTimeout: 200,
+      poll: 1000,
+      ignored: /node_modules/,
     };
+
+    config.devtool = "eval";
+
+    config.resolve.alias["#"] = resolve(__dirname, "../src/assets/");
+    config.resolve.alias["@"] = resolve(__dirname, "../src/");
+
+    config.module.rules.push({
+      test: /\.svg$/i,
+      use: ["vue-loader", "vue-svg-loader"],
+    });
+
+    return config;
   },
 };
