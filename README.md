@@ -2,13 +2,13 @@
 
 <p align="center">
   <img
-    src="https://user-images.githubusercontent.com/29407019/112362245-4c463100-8ce5-11eb-81b2-7289f7376775.png"
+    src="https://user-images.githubusercontent.com/29407019/112369852-bd89e200-8ced-11eb-8c85-172ce6783191.png"
     align="center"
     alt="Bite Vite Template Logo"
     width="200"
   />
   <img
-    src="https://user-images.githubusercontent.com/29407019/112358795-b6f56d80-8ce1-11eb-821f-e05819581ef6.png"
+    src="https://user-images.githubusercontent.com/29407019/112369775-a2b76d80-8ced-11eb-82fd-c5b8cf3bfbb6.png"
     align="center"
     alt="Bite Vite Template Logo"
     width="200"
