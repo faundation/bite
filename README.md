@@ -1,26 +1,30 @@
-# Vue 3 + Typescript + Vite
+# Bite Vite Template 🐝
 
-This template should help get you started developing with Vue 3 and Typescript in Vite.
+Vite template that minimizes **`bite`** pain.
 
-## Recommended IDE Setup
+![bite-template-ss](https://user-images.githubusercontent.com/29407019/111959840-07ad7080-8b00-11eb-8e00-4537a7389c41.png)
 
-[VSCode](https://code.visualstudio.com/) + [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur). Make sure to enable `vetur.experimental.templateInterpolationService` in settings!
+## Ready for most used deployment platforms 🥞
 
-### If Using `<script setup>`
+Also, ready for production environment. With several clicks.
 
-[`<script setup>`](https://github.com/vuejs/rfcs/pull/227) is a feature that is currently in RFC stage. To get proper IDE support for the syntax, use [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) instead of Vetur (and disable Vetur).
+|     Netlify    |    Vercel    |    Heroku    |
+| :------------: | :----------: | :----------: |
+| [![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Asim-Tahir/vite-template) | [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2FAsim-Tahir%2Fvite-template&env=VITE_PORT,VITE_API_URL&project-name=vite-template&repo-name=vite-template&demo-title=Production%20Ready%20Vite%20Template)  | [![Deploy with Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Asim-Tahir/vite-template)
 
-## Type Support For `.vue` Imports in TS
+## Comes with delicious features 🍯
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can use the following:
+Feature              | Label
+| :------------------: | :-------------------- |
+| `Storybook for Vue 3` | [![StorybookJS](https://img.shields.io/npm/v/storybook/next?label=%40storybook%2Fvue&logo=storybook)](https://github.com/storybookjs/storybook/releases/tag/v6.2.0-rc.6)
+| `PostCSS` | [![postcss](https://img.shields.io/npm/v/postcss/latest?label=postcss&logo=postcss&logoColor=%23DD3A0A)](https://github.com/postcss/postcss/releases/latest)
+| `TailwindCSS 🌊` | [![TailwindCSS](https://img.shields.io/npm/v/tailwindcss/latest?label=tailwindcss&logo=tailwind-css)](https://github.com/tailwindlabs/tailwindcss/releases/latest)
+| `SVG loader` for Vite ⚡ | [![vite-svg-loader](https://img.shields.io/npm/v/vite-svg-loader/latest?label=vite-svg-loader&logo=svg)](https://github.com/jpkleemans/vite-svg-loader/releases/latest)
+| Powered by `Typescript` 🦾 | [![Typescript](https://img.shields.io/npm/v/typescript/latest?label=typescript&logo=typescript)](https://github.com/microsoft/TypeScript/releases/latest)
+| Ready for `PWA` 🧳 | [![vite-plugin-pwa](https://img.shields.io/npm/v/vite-plugin-pwa/latest?label=vite-plugin-pwa)](https://github.com/antfu/vite-plugin-pwa/releases/latest) |
+| Built-in [`docker` 🐳](Dockerfile) and [`docker-compose` 🐋](docker-compose.yml) support | ![Docker](https://img.shields.io/static/v1?label=%20&message=Docker&logo=docker&color=249) ![GraphQL](https://img.shields.io/static/v1?label=%20&message=Docker-Compose&logo=docker&color=249)
+| Predefined GraphQL backend config into [`vite.config.ts`](vite.config.ts#L23) | ![GraphQL](https://img.shields.io/static/v1?label=%20&message=GraphQL&logo=graphql&color=DC32A4)
 
-### If Using Volar
+## Getting Started 🍽️
 
-Run `Volar: Switch TS Plugin on/off` from VSCode command palette.
-
-### If Using Vetur
-
-1. Install and add `@vuedx/typescript-plugin-vue` to the [plugins section](https://www.typescriptlang.org/tsconfig#plugins) in `tsconfig.json`
-2. Delete `src/shims-vue.d.ts` as it is no longer needed to provide module info to Typescript
-3. Open `src/main.ts` in VSCode
-4. Open the VSCode command palette 5. Search and run "Select TypeScript version" -> "Use workspace version"
+[Let's start with preparing the dinner table 😋. Generate repo from this template.](https://github.com/Asim-Tahir/bite/generate)
