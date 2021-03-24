@@ -1,8 +1,23 @@
-# Bite Vite Template 🐝
+<h1 align="center">Bite Vite Template 🐝</h1>
 
-Vite template that minimizes **`bite`** pain.
+<p align="center">
+  <img
+    src="https://user-images.githubusercontent.com/29407019/112362245-4c463100-8ce5-11eb-81b2-7289f7376775.png"
+    align="center"
+    alt="Bite Vite Template Logo"
+    width="200"
+  />
+  <img
+    src="https://user-images.githubusercontent.com/29407019/112358795-b6f56d80-8ce1-11eb-821f-e05819581ef6.png"
+    align="center"
+    alt="Bite Vite Template Logo"
+    width="200"
+  />
+</p>
 
-![bite-template-ss](https://user-images.githubusercontent.com/29407019/111959840-07ad7080-8b00-11eb-8e00-4537a7389c41.png)
+<p align="center">
+  Vite template that minimizes <b><code>bite</code></b> pain.
+</p>
 
 ## Ready for most used deployment platforms 🥞
 
@@ -17,15 +32,17 @@ Also, ready for production environment. With several clicks.
 
 Feature              | Label
 | :------------------: | :-------------------- |
-| `Storybook for Vue 3` | [![StorybookJS](https://img.shields.io/npm/v/storybook/next?label=%40storybook%2Fvue&logo=storybook)](https://github.com/storybookjs/storybook/releases/tag/v6.2.0-rc.6)
+| `StorybookJS` for Vue 3 | [![StorybookJS](https://img.shields.io/npm/v/storybook/next?label=%40storybook%2Fvue&logo=storybook)](https://github.com/storybookjs/storybook/releases/tag/v6.2.0-rc.6)
 | `PostCSS` | [![postcss](https://img.shields.io/npm/v/postcss/latest?label=postcss&logo=postcss&logoColor=%23DD3A0A)](https://github.com/postcss/postcss/releases/latest)
 | `TailwindCSS 🌊` | [![TailwindCSS](https://img.shields.io/npm/v/tailwindcss/latest?label=tailwindcss&logo=tailwind-css)](https://github.com/tailwindlabs/tailwindcss/releases/latest)
 | `SVG loader` for Vite ⚡ | [![vite-svg-loader](https://img.shields.io/npm/v/vite-svg-loader/latest?label=vite-svg-loader&logo=svg)](https://github.com/jpkleemans/vite-svg-loader/releases/latest)
 | Powered by `Typescript` 🦾 | [![Typescript](https://img.shields.io/npm/v/typescript/latest?label=typescript&logo=typescript)](https://github.com/microsoft/TypeScript/releases/latest)
 | Ready for `PWA` 🧳 | [![vite-plugin-pwa](https://img.shields.io/npm/v/vite-plugin-pwa/latest?label=vite-plugin-pwa)](https://github.com/antfu/vite-plugin-pwa/releases/latest) |
-| Built-in [`docker` 🐳](Dockerfile) and [`docker-compose` 🐋](docker-compose.yml) support | [![Docker](https://img.shields.io/static/v1?label=%20&message=Docker&logo=docker&color=249)](Dockerfile) [![Docker-Compose](https://img.shields.io/static/v1?label=%20&message=Docker-Compose&logo=docker&color=249)](docker-compose.yml)
+| Built-in [`docker`](Dockerfile) 🐳 and [`docker-compose`](docker-compose.yml) 🐋 support | [![Docker](https://img.shields.io/static/v1?label=%20&message=Docker&logo=docker&color=249)](Dockerfile) [![Docker-Compose](https://img.shields.io/static/v1?label=%20&message=Docker-Compose&logo=docker&color=249)](docker-compose.yml)
 | Predefined GraphQL backend config into [`vite.config.ts`](vite.config.ts#L23) | ![GraphQL](https://img.shields.io/static/v1?label=%20&message=GraphQL&logo=graphql&color=DC32A4)
 
 ## Getting Started 🍽️
 
-[Let's start with preparing the dinner table 😋. Generate repo from this template.](https://github.com/Asim-Tahir/bite/generate)
+Let's start with preparing the dinner table 😋.
+
+[`Click here for generate repo from this template.`](https://github.com/Asim-Tahir/bite/generate) Or you can click `Use this template` button above.
