@@ -1,29 +1,44 @@
 {
-  "name": "osi-erp",
-  "displayName": "OSI ERP",
-  "private": true,
+  "name": "bite",
+  "displayName": "Bite Vite Template",
+  "description": "Vite template that minimizes bite pain 🐝",
+  "license": "MIT",
+  "maintainers": [
+    {
+      "email": "AsimTahir@protonmail.com",
+      "name": "Asim-Tahir",
+      "url": "https://github.com/Asim-Tahir"
+    }
+  ],
+  "author": {
+    "email": "AsimTahir@protonmail.com",
+    "name": "Asim-Tahir",
+    "url": "https://github.com/Asim-Tahir"
+  },
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview",
+    "serve": "vite preview --port 9090",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -o dist_sb/"
   },
   "dependencies": {
+    "@vueuse/core": "^4.4.1",
     "@vueuse/head": "^0.5.1",
+    "@vueuse/integrations": "^4.4.1",
     "vue": "^3.0.7",
     "vue-router": "^4.0.5"
   },
   "devDependencies": {
     "@babel/core": "^7.13.10",
-    "@storybook/addon-actions": "^6.2.0-beta.14",
-    "@storybook/addon-essentials": "^6.2.0-beta.14",
-    "@storybook/addon-links": "^6.2.0-beta.14",
+    "@storybook/addon-actions": "^6.2.0-rc.8",
+    "@storybook/addon-essentials": "^6.2.0-rc.8",
+    "@storybook/addon-links": "^6.2.0-rc.8",
     "@storybook/addon-postcss": "^2.0.0",
-    "@storybook/vue3": "^6.2.0-beta.14",
+    "@storybook/vue3": "^6.2.0-rc.8",
     "@tailwindcss/typography": "^0.4.0",
-    "@types/node": "^14.14.33",
+    "@types/node": "^14.14.35",
     "@vitejs/plugin-vue": "^1.1.5",
     "@vue/compiler-sfc": "^3.0.7",
     "autoprefixer": "^10.2.5",
@@ -33,10 +48,11 @@
     "postcss-nested": "^5.0.5",
     "postcss-nested-ancestors": "^2.0.0",
     "postcss-preset-env": "^6.7.0",
-    "tailwindcss": "^2.0.3",
+    "tailwindcss": "^2.0.4",
     "typescript": "^4.2.3",
     "vite": "^2.0.5",
-    "vite-svg-loader": "^1.4.2",
+    "vite-plugin-pwa": "^0.5.6",
+    "vite-svg-loader": "^1.5.1",
     "vue-loader": "^16.1.2",
     "vue-svg-loader": "^0.17.0-beta.2"
   }
