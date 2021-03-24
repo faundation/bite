@@ -1,0 +1,39 @@
+{
+  "name": "Bite Vite Template",
+  "description": "Vite template that minimizes bite pain 🐝",
+  "image": "heroku/nodejs",
+  "repository": "https://github.com/Asim-Tahir/bite",
+  "keywords": [
+    "svg",
+    "template",
+    "pwa",
+    "vue-router",
+    "bite",
+    "ssg",
+    "vite",
+    "storybookjs",
+    "vite-template",
+    "tailwindcss-v2",
+    "postcss-v8"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nginx"
+    }
+  ],
+  "env": {
+    "VITE_API_URL": {
+      "required": false,
+      "value": "",
+      "description": "For Backend API URL. Default is http://localhost:4000"
+    },
+    "PORT": {
+      "required": true,
+      "value": "80",
+      "description": "For NGINX default port. Default is 80"
+    }
+  }
+}
