@@ -19,6 +19,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "heroku-postbuild": "vite build && mv dist/ /app/public/",
     "serve": "vite preview --port 9090",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o dist_sb/"

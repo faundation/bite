@@ -9,14 +9,11 @@ export default defineConfig({
   plugins: [
     Vue(),
     VitePWA({
-      mode: 'development',
-      base: '/',
+      mode: "development",
+      base: "/",
     }),
     svgLoader(),
   ],
-  build: {
-    outDir: process.env.VITE_BUILD_OUTDIR || "dist"
-  },
   server: {
     port: parseInt(process.env.VITE_PORT) || 8080,
     cors: true,
