@@ -4,6 +4,8 @@ export const parameters = {
   layout: "centered",
 };
 
+import "../src/styles/index.css"
+
 // import { createApp } from "vue";
 // import { createHead } from "@vueuse/head";
 
