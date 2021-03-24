@@ -1,0 +1,159 @@
+version: "3.9"
+
+services:
+  init:
+    container_name: bite-init
+    image: node:15-alpine
+    working_dir: /app
+    volumes:
+      - ./package.json:/app/package.json
+      - ./yarn.lock:/app/yarn.lock
+      - ./node_modules/:/app/node_modules/
+    networks:
+      - net
+    command:
+      - yarn
+
+  dev:
+    container_name: bite-dev
+    image: node:15-alpine
+    working_dir: /app
+    volumes:
+      - ./src/:/app/src/
+      - ./public/:/app/public/
+      - ./node_modules/:/app/node_modules/
+      - ./vite.config.ts:/app/vite.config.ts
+      - ./index.html:/app/index.html
+      - ./postcss.config.js:/app/postcss.config.js
+      - ./tailwind.config.js:/app/tailwind.config.js
+      - ./tsconfig.json:/app/tsconfig.json
+      - ./package.json:/app/package.json
+    networks:
+      - net
+    expose:
+      - 8080
+    ports:
+      - 8080:8080
+    #For local docker-compose development environment
+    command:
+      - yarn
+      - dev
+    # For codespaces or devcontanier development environment
+    # command: /bin/sh -c "while sleep 1000; do :; done"
+
+  serve:
+    container_name: bite-serve
+    image: node:15-alpine
+    working_dir: /app
+    volumes:
+      - dist:/app/dist
+      - ./node_modules/:/app/node_modules/
+      - ./package.json:/app/package.json
+    networks:
+      - net
+    expose:
+      - 9090
+    ports:
+      - 9090:9090
+    #For local docker-compose development environment
+    command:
+      - yarn
+      - serve
+    # For codespaces or devcontanier development environment
+    # command: /bin/sh -c "while sleep 1000; do :; done"
+
+  build:
+    container_name: bite-build
+    image: node:15-alpine
+    working_dir: /app
+    volumes:
+      - ./src/:/app/src/
+      - ./public/:/app/public/
+      - ./node_modules/:/app/node_modules/
+      - dist:/app/dist/
+      - ./vite.config.ts:/app/vite.config.ts
+      - ./index.html:/app/index.html
+      - ./postcss.config.js:/app/postcss.config.js
+      - ./tailwind.config.js:/app/tailwind.config.js
+      - ./tsconfig.json:/app/tsconfig.json
+      - ./package.json:/app/package.json
+    networks:
+      - net
+    command:
+      - yarn
+      - build
+
+  sb:
+    container_name: bite-sb
+    image: node:15-alpine
+    working_dir: /app
+    volumes:
+      - ./src/:/app/src/
+      - ./node_modules/:/app/node_modules/
+      - ./.storybook/:/app/.storybook/
+      - ./index.html:/app/index.html
+      - ./postcss.config.js:/app/postcss.config.js
+      - ./tailwind.config.js:/app/tailwind.config.js
+      - ./tsconfig.json:/app/tsconfig.json
+      - ./package.json:/app/package.json
+    networks:
+      - net
+    expose:
+      - 6006
+    ports:
+      - 6006:6006
+    #For local docker-compose development environment
+    command:
+      - yarn
+      - storybook
+    #For codespaces or devcontanier development environment
+    # command: /bin/sh -c "while sleep 1000; do :; done"
+
+  sb-build:
+    container_name: bite-sb-build
+    image: node:15-alpine
+    volumes:
+      - ./src/:/app/src/
+      - ./public/:/app/public/
+      - ./node_modules/:/app/node_modules/
+      - dist_sb:/app/dist_sb/
+      - ./.storybook/:/app/.storybook/
+      - ./vite.config.ts:/app/vite.config.ts
+      - ./index.html:/app/index.html
+      - ./postcss.config.js:/app/postcss.config.js
+      - ./tailwind.config.js:/app/tailwind.config.js
+      - ./tsconfig.json:/app/tsconfig.json
+      - ./package.json:/app/package.json
+    working_dir: /app
+    networks:
+      - net
+    command:
+      - yarn
+      - build-storybook
+
+  sb-prod:
+    container_name: bite-sb-prod
+    image: nginx:stable-alpine
+    working_dir: /usr/share/nginx/html
+    volumes:
+      - dist_sb:/usr/share/nginx/html/
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    networks:
+      - net
+    expose:
+      - 80
+    ports:
+      - 7007:80
+    command:
+      - nginx
+      - -g
+      - daemon off;
+
+networks:
+  net:
+    driver: bridge
+    name: bite_net
+  
+volumes:
+  dist:
+  dist_sb:
