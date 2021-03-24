@@ -1,12 +1,20 @@
 import { defineConfig } from "vite";
-import vue from "@vitejs/plugin-vue";
-import svgLoader from 'vite-svg-loader'
+import Vue from "@vitejs/plugin-vue";
+import { VitePWA } from "vite-plugin-pwa";
+import svgLoader from "vite-svg-loader";
 import { resolve } from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(), svgLoader()],
-  
+  plugins: [
+    Vue(),
+    VitePWA({
+      mode: 'development',
+      base: '/',
+    }),
+    svgLoader(),
+  ],
+
   server: {
     port: parseInt(process.env.VITE_PORT) || 8080,
     cors: true,
@@ -23,7 +31,7 @@ export default defineConfig({
     watch: {
       usePolling: true,
       useFsEvents: true,
-    }
+    },
   },
   resolve: {
     alias: {
