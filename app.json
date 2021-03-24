@@ -27,13 +27,18 @@
   "env": {
     "VITE_API_URL": {
       "required": false,
-      "value": "",
+      "value": "http://localhost:4000",
       "description": "For Backend API URL. Default is http://localhost:4000"
     },
     "PORT": {
       "required": true,
       "value": "80",
-      "description": "For NGINX default port. Default is 80"
+      "description": "For NGINX default port. Its must be a number. Default is 80"
+    },
+    "VITE_BUILD_OUTDIR": {
+      "required": true,
+      "value": "/app/public/",
+      "description": "For Vite build output directory. This field required for nginx buildpack. Default is /app/public/"
     }
   }
 }

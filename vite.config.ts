@@ -14,7 +14,9 @@ export default defineConfig({
     }),
     svgLoader(),
   ],
-
+  build: {
+    outDir: process.env.VITE_BUILD_OUTDIR || "dist"
+  },
   server: {
     port: parseInt(process.env.VITE_PORT) || 8080,
     cors: true,
