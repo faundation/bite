@@ -1,6 +1,7 @@
 {
   "name": "Bite Vite Template",
   "description": "Vite template that minimizes bite pain 🐝",
+  "logo": "https://raw.githubusercontent.com/Asim-Tahir/bite/main/src/assets/Text/1%20Template.png",
   "image": "heroku/nodejs",
   "repository": "https://github.com/Asim-Tahir/bite",
   "keywords": [
