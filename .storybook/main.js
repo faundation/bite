@@ -1,5 +1,5 @@
 const { resolve } = require("path");
-import { WebpackOptions } from "webpack/declarations/WebpackOptions";
+// import { WebpackOptions } from "webpack/declarations/WebpackOptions";
 
 module.exports = {
   core: {
@@ -18,7 +18,7 @@ module.exports = {
       },
     },
   ],
-  webpackFinal: (config: WebpackOptions) => {
+  webpackFinal: (config) => {
     config.module.rules = config.module.rules.map((rule) => {
       if (String(rule.test).includes("svg")) {
         const test = String(rule.test).replace("svg|", "").replace(/\//g, "");
