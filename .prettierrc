@@ -6,5 +6,7 @@
   "endOfLine": "lf",
   "jsxBracketSameLine": false,
   "vueIndentScriptAndStyle": true,
-  "singleQuote": false
+  "singleQuote": false,
+  "arrowParens": "always",
+  "semi": true
 }

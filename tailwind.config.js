@@ -5,55 +5,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: {
-          light: "#DED3FF",
-          DEFAULT: "#5F2EEA",
-          dark: "#2A00A2",
-        },
-        secondary: {
-          light: "#D5F7FF",
-          DEFAULT: "#1CC8EE",
-          dark: "#0096B7",
-        },
-        error: {
-          light: "#FFF2F7",
-          DEFAULT: "#ED2E7E",
-          dark: "#C30052",
-        },
-        success: {
-          dark: "#00966D",
-          DEFAULT: "#00BA88",
-          light: "#F3FDFA",
-        },
-        warning: {
-          dark: "#A26B00",
-          DEFAULT: "#F4B740",
-          light: "#FFF0D4",
-        },
-        vote: {
-          up: {
-            DEFAULT: "#a65400",
-            deselect: "#FB7F00",
-          },
-          down: {
-            DEFAULT: "#2d0082",
-            deselect: "#4600CA",
-          },
-        },
         gradient: {
-          primary: "linear-gradient(114.44deg, #7433FF 0%, #FFA3FD 100%)",
-          secondary: "linear-gradient(114.44deg, #624AF2 0%, #50DDC3 100%)",
-          accent: "linear-gradient(114.44deg, #EB0055 0%, #FFFA80 100%)",
-        },
-        gray: {
-          title: "#14142B",
-          body: "#4E4B66",
-          label: "#6E7191",
-          placeholder: "#A0A3BD",
-          line: "#D6D8E7",
-          input: "#EFF0F6",
-          background: "#282B30",
-          "off-white": "#FCFCFC",
+          primary: "linear-gradient(180deg, #FFE14B 1.04%, #FFBA17 100%)",
+          secondary: "linear-gradient(180deg, #424242 0%, #2C2C2C 100%)",
         },
       },
     },
