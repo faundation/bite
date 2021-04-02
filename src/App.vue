@@ -4,7 +4,7 @@
       class="flex flex-row space-x-5 justify-center items-center text-lg font-semibold"
     >
       <img
-        src="/src/assets/Text/1 Template.png"
+        src="./assets/Text/1-Template.png"
         alt="BITE Text Logo"
         width="225"
       />

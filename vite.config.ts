@@ -1,18 +1,13 @@
 import { defineConfig } from "vite";
 import Vue from "@vitejs/plugin-vue";
-import { VitePWA } from "vite-plugin-pwa";
-import svgLoader from "vite-svg-loader";
+import SVGLoader from "vite-svg-loader";
 import { resolve } from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     Vue(),
-    VitePWA({
-      mode: process.env.NODE_ENV === "development" ? "development" : "production",
-      base: "/",
-    }),
-    svgLoader(),
+    SVGLoader(),
   ],
   server: {
     port: parseInt(process.env.VITE_PORT) || 8080,

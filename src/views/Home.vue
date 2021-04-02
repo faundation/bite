@@ -1,8 +1,8 @@
 <template>
   <section class="flex flex-col">
     <div class="flex flex-row justify-center items-center">
-      <img src="/src/assets/Logo/1 Template.png" alt="" srcset="" />
-      <img src="/src/assets/Logo/1.png" alt="" srcset="" />
+      <img src="../assets/Logo/1-Template.png" alt="" srcset="" />
+      <img src="../assets/Logo/1.png" alt="" srcset="" />
     </div>
     <Stepper />
   </section>

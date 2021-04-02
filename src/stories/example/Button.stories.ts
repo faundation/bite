@@ -10,7 +10,13 @@ export default {
   },
 };
 
-const Template = (args: any) => ({
+type args = {
+  primary?: boolean,
+  size?: string,
+  label: string,
+}
+
+const Template = (args: args) => ({
   // Components used in your story `template` are defined in the `components` object
   components: { MyButton },
   // The story's `args` need to be mapped into the template through the `setup()` method
