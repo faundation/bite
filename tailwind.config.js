@@ -5,9 +5,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        gradient: {
-          primary: "linear-gradient(180deg, #FFE14B 1.04%, #FFBA17 100%)",
-          secondary: "linear-gradient(180deg, #424242 0%, #2C2C2C 100%)",
+        primary: {
+          dark: "#FFBA17",
+          DEFAULT: "#FFD500",
+          light: "#FFE668",
+        },
+        secondary: {
+          dark: "#2C2C2C",
+          DEFAULT: "#424242",
+          light: "#535353",
         },
       },
     },
@@ -16,23 +22,10 @@ module.exports = {
       sans: ["Poppins", "sans-serif"],
     },
     fontSize: {
-      "desk-sm": "2rem",
-      "desk-md": "3rem",
-      "desk-lg": "4rem",
-
-      "desk-txt-xs": "0.875rem",
-      "desk-txt-sm": "1rem",
-      "desk-txt-md": "1.125rem",
-      "desk-txt-lg": "1.5rem",
-
-      "mobi-sm": "1rem",
-      "mobi-md": "2rem",
-      "mobi-lg": "3rem",
-
-      "mobi-txt-xs": "0.75rem",
-      "mobi-txt-sm": "0.875rem",
-      "mobi-txt-md": "1rem",
-      "mobi-txt-lg": "1.25rem",
+      lg: "4.5rem",
+      md: "3rem",
+      sm: "2rem",
+      xs: "1rem",
     },
     fontWeight: {
       normal: 400,
@@ -50,5 +43,7 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [
+    require("@tailwindcss/typography"),
+  ],
 };
