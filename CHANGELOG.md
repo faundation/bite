@@ -8,7 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ### Updated
 
-- [`Home`](https://bite-vite.netlify.app/) and [`about`](https://bite-vite.netlify.app/about) page template updated. [#4](https://github.com/Asim-Tahir/bite/issues/4)
+- [`Home`](https://bite-vite.vercel.app/) and [`about`](https://bite-vite.vercel.app/about) page template updated. [#4](https://github.com/Asim-Tahir/bite/issues/4)
 - StorybookJS [![StorybookJS](https://img.shields.io/npm/v/storybook/latest?label=%40storybook%2Fvue&logo=storybook)](https://github.com/storybookjs/storybook/releases/tag/v6.2.2) officially released.
 
 ### Known Issues

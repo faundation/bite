@@ -4,7 +4,6 @@
       <img src="../assets/Logo/1-Template.png" alt="" srcset="" />
       <img src="../assets/Logo/1.png" alt="" srcset="" />
     </div>
-    <Stepper />
   </section>
 </template>
 
@@ -12,9 +11,7 @@
 
 <script lang="ts">
   import { defineComponent } from "vue";
-  import Stepper from "@/components/Stepper.vue";
   export default defineComponent({
     name: "About",
-    components: { Stepper },
   });
 </script>
