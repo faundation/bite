@@ -1,4 +1,13 @@
-<h1 align="center">Bite Vite Template 🐝</h1>
+<h1 align="center">
+  <img
+    align="center"
+    src="https://user-images.githubusercontent.com/29407019/112463871-d50bae00-8d73-11eb-978d-6756ad20126a.png"
+    alt="Bite Vite Text"
+    width="100"
+  />
+  <br/>
+  Vite Template <small>🐝</small>
+</h1>
 
 <p align="center">
   <img
@@ -18,6 +27,7 @@
 <p align="center">
   Vite template that minimizes <b><code>bite</code></b> pain.
 </p>
+<br/>
 
 ## Ready for most used deployment platforms 🥞
 
