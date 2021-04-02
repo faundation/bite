@@ -6,6 +6,12 @@
 @tailwind screens;
 
 @layer utilities {
+  .text-gradient {
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+
   .bg-blur-2xl {
     backdrop-filter: blur(5em);
   }
@@ -28,15 +34,5 @@
 
   .bg-blur-xs {
     backdrop-filter: blur(0.5em);
-  }
-}
-
-body {
-  font-size: 16px;
-}
-
-* {
-  &:focus {
-    @apply outline-none;
   }
 }

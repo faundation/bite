@@ -37,10 +37,10 @@
   }
 </style>
 
-<script>
-  import { computed } from "vue";
+<script lang="ts">
+  import { computed, defineComponent } from "vue";
 
-  export default {
+  export default defineComponent({
     name: "my-button",
 
     props: {
@@ -81,5 +81,5 @@
         },
       };
     },
-  };
+  });
 </script>
