@@ -10,6 +10,7 @@
     "esModuleInterop": true,
     "importHelpers": true,
     "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
     "allowJs": true,
     "checkJs": false,
     "lib": ["ESNext", "DOM"],
