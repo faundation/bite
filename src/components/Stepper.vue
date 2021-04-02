@@ -4,7 +4,7 @@
     <div
       class="stepper"
       :style="{ transform: `translateY(${position / 2}px)` }"
-      @mousedown="mousedown()"
+      @mousedown="mousedown"
     >
       <span
         class="first"
@@ -68,7 +68,6 @@
   import { defineComponent, reactive, ref } from "vue";
   import { useToggle } from "@vueuse/core";
   import anime from "animejs";
-  import $ from "jquery";
 
   import Up from "@/assets/Stepper/Up.svg"
   import Down from "@/assets/Stepper/Down.svg"
@@ -144,10 +143,9 @@
         direction.value = "plus";
         countAnime.plus = anime.timeline();
         // TODO:
-        $(".next")
-          .text(count.value)
-          .css("transform", "translateY(-100px) translateX(-50%)");
-        // $('.next').text(count).css('transform', 'translateY(-100px) translateX(-50%)');
+        // $(".next")
+        //   .text(count.value)
+        //   .css("transform", "translateY(-100px) translateX(-50%)");
 
         countAnime.plus
           .add({
@@ -169,10 +167,9 @@
         direction.value = "minus";
         countAnime.minus = anime.timeline();
         // TODO:
-        $(".next")
-          .text(count.value)
-          .css("transform", "translateY(100px) translateX(-50%)");
-        // $('.next').text(count).css('transform', 'translateY(100px) translateX(-50%)');
+        // $(".next")
+        //   .text(count.value)
+        //   .css("transform", "translateY(100px) translateX(-50%)");
         countAnime.minus
           .add({
             targets: ".active",
