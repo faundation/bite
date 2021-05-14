@@ -47,7 +47,7 @@
     "@vue/compiler-sfc": "^3.0.7",
     "autoprefixer": "^10.2.5",
     "babel-loader": "^8.2.2",
-    "postcss": "^8.2.8",
+    "postcss": "^8.2.10",
     "postcss-advanced-variables": "^3.0.1",
     "postcss-preset-env": "^6.7.0",
     "tailwindcss": "^2.0.4",
