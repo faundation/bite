@@ -3,7 +3,7 @@ version: "3.9"
 services:
   init:
     container_name: bite-init
-    image: node:15-alpine
+    image: node:16-alpine
     working_dir: /app
     volumes:
       - ./package.json:/app/package.json
@@ -16,7 +16,7 @@ services:
 
   dev:
     container_name: bite-dev
-    image: node:15-alpine
+    image: node:16-alpine
     working_dir: /app
     volumes:
       - ./src/:/app/src/
@@ -43,7 +43,7 @@ services:
 
   serve:
     container_name: bite-serve
-    image: node:15-alpine
+    image: node:16-alpine
     working_dir: /app
     volumes:
       - dist:/app/dist
@@ -64,7 +64,7 @@ services:
 
   build:
     container_name: bite-build
-    image: node:15-alpine
+    image: node:16-alpine
     working_dir: /app
     volumes:
       - ./src/:/app/src/
@@ -85,7 +85,7 @@ services:
 
   sb:
     container_name: bite-sb
-    image: node:15-alpine
+    image: node:16-alpine
     working_dir: /app
     volumes:
       - ./src/:/app/src/
@@ -111,7 +111,7 @@ services:
 
   sb-build:
     container_name: bite-sb-build
-    image: node:15-alpine
+    image: node:16-alpine
     volumes:
       - ./src/:/app/src/
       - ./public/:/app/public/
