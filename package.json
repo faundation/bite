@@ -54,7 +54,7 @@
     "typescript": "4.2.3",
     "vite": "2.3.6",
     "vite-svg-loader": "2.0.2",
-    "vue-loader": "16.2.0",
+    "vue-loader": "16.3.1",
     "vue-svg-loader": "0.17.0-beta.2"
   }
 }
