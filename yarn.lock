@@ -10916,10 +10916,10 @@ vfile@^4.0.0:
     unist-util-stringify-position "^2.0.0"
     vfile-message "^2.0.0"
 
-vite-svg-loader@2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/vite-svg-loader/-/vite-svg-loader-2.0.2.tgz#8c0c4f919a41c68bfebad0ba5966a3250b6242b1"
-  integrity sha512-4yvWSHO9rXRUIOFJscIC3xqx30LjKpzKd2QMTLymskebAYjvZ/P1zSCYSSaYicr4E/102hXFXf7PhPPVxJO6Tg==
+vite-svg-loader@2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/vite-svg-loader/-/vite-svg-loader-2.1.1.tgz#ca4ac6b7208b1ef5268b425f904dc36908c327b5"
+  integrity sha512-TOMwQgA44SIre5xKpS5HrERbXdRPt7VN41WVi2WIzTEtxwIKQJV7XYsUeslBXCS7RPUAly00/oAdMCN6qT+/Rg==
   dependencies:
     "@vue/compiler-sfc" "^3.0.11"
     svgo "^2.3.0"
