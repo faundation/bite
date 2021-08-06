@@ -33,10 +33,9 @@
 
 Also, ready for production environment. With several clicks.
 
-| **Kind** | **Netlify** | **Vercel** | **Heroku** |
-| :--: | :-----: | :----: | :----: |
-| **`Buttons`** | [![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Asim-Tahir/bite) | [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2FAsim-Tahir%2Fbite&project-name=bite-vite&repo-name=bite-vite&demo-title=Bite%20Vite%20Template&demo-description=Vite%20template%20that%20minimizes%20bite%20pain%20%F0%9F%90%9D)  | [![Deploy with Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Asim-Tahir/bite)
-| **`Live Websites`** | [bite-netlify](https://bite-vite.netlify.app/) | [bite-vercel](https://bite-vite.vercel.app/) | [bite-heroku](https://bite-vite.herokuapp.com/) |
+| **Netlify** | **Vercel** | **Heroku** |
+| :-----: | :----: | :----: |
+| [![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Asim-Tahir/bite) | [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2FAsim-Tahir%2Fbite&project-name=bite-vite&repo-name=bite-vite&demo-title=Bite%20Vite%20Template&demo-description=Vite%20template%20that%20minimizes%20bite%20pain%20%F0%9F%90%9D)  | [![Deploy with Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Asim-Tahir/bite)
 
 ## Comes with delicious features 🍯
 
