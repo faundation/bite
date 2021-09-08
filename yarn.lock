@@ -2781,16 +2781,16 @@
   resolved "https://registry.yarnpkg.com/@vueuse/head/-/head-0.6.0.tgz#5584b1f724327cfce941c42efec9e590f5799329"
   integrity sha512-fi7ZjkMpEAUtTT6iR5wgL2HkX1+3zbrmbpcwU//RgJIWEr5b42jk8E9yOheaC2dYAAHzelAllVpX0pDmhcTXuw==
 
-"@vueuse/integrations@5.2.0":
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/@vueuse/integrations/-/integrations-5.2.0.tgz#3f4ed44d1003ce00c770d0dd68d90028ff24451f"
-  integrity sha512-fWtePGnzGP9tRaWDEFfITVwkOVPe7Ayxp9dNKCmVF/e8I5mcyxfKMEJ9NOBdEhOrKZE8v72imk3kiiraBJXvQQ==
+"@vueuse/integrations@6.3.2":
+  version "6.3.2"
+  resolved "https://registry.yarnpkg.com/@vueuse/integrations/-/integrations-6.3.2.tgz#8e4aaeaa0a5bc7946f1e497adb2cf63029af4ec2"
+  integrity sha512-Ugh3zSh/DbkBfeNMNLr0PXHRuc/OsQjfqcQ+GGXw+8g/BTaZgPyPBVHcPFsIfRWvGZWeio94b6WdZESOfbTgug==
   dependencies:
-    "@vueuse/shared" "5.2.0"
+    "@vueuse/shared" "6.3.2"
     vue-demi "*"
   optionalDependencies:
-    axios "^0.21.1"
-    focus-trap "^6.6.0"
+    axios "^0.21.4"
+    focus-trap "^6.6.1"
     jwt-decode "^3.1.2"
     nprogress "^0.2.0"
     qrcode "^1.4.4"
@@ -2800,6 +2800,13 @@
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/@vueuse/shared/-/shared-5.2.0.tgz#894921cf5e5fc7f9afa7d7870800b0c9cd265e0c"
   integrity sha512-PD2PBaEcdl+pXXeKjhU+LZqQuA9xX/6mtVGIYG29xsjH7W3IjU164nwCAfDe2Lsy8rMaYmVqVSB6PHtiZZyDSg==
+  dependencies:
+    vue-demi "*"
+
+"@vueuse/shared@6.3.2":
+  version "6.3.2"
+  resolved "https://registry.yarnpkg.com/@vueuse/shared/-/shared-6.3.2.tgz#35a821561fd4fb1ea2e24b6fa9086f3d0d506316"
+  integrity sha512-/KcGBbdxdjAPlmPjAs6Zs5dVWMYYL5eK7/c1kPExRIO7HKVRnV6scUYWgmU4qMP9ZVB8XD2tF+5JuWz3vAHuAw==
   dependencies:
     vue-demi "*"
 
@@ -3472,12 +3479,12 @@ autoprefixer@^9.6.1, autoprefixer@^9.8.6:
     postcss "^7.0.32"
     postcss-value-parser "^4.1.0"
 
-axios@^0.21.1:
-  version "0.21.1"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.1.tgz#22563481962f4d6bde9a76d516ef0e5d3c09b2b8"
-  integrity sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==
+axios@^0.21.4:
+  version "0.21.4"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.4.tgz#c67b90dc0568e5c1cf2b0b858c43ba28e2eda575"
+  integrity sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==
   dependencies:
-    follow-redirects "^1.10.0"
+    follow-redirects "^1.14.0"
 
 babel-core@^7.0.0-bridge.0:
   version "7.0.0-bridge.0"
@@ -5721,17 +5728,17 @@ flush-write-stream@^1.0.0:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
 
-focus-trap@^6.6.0:
-  version "6.6.0"
-  resolved "https://registry.yarnpkg.com/focus-trap/-/focus-trap-6.6.0.tgz#7fb37679926ec1bd762d0748b056c68a64a9e8cf"
-  integrity sha512-2hWVR3XbBejn5v8wDW9DFzLWXcxMNaSJ/CtE3E+FJjjBCLwIYbZJwjUi2RDBfQPM58gHEt5hck0jrJgHR9/s+A==
+focus-trap@^6.6.1:
+  version "6.6.1"
+  resolved "https://registry.yarnpkg.com/focus-trap/-/focus-trap-6.6.1.tgz#761ce2c82ddd72beeb049e968bc8414e25b704aa"
+  integrity sha512-x9BWuAeF5UrfWuYKJ3jYrjcVYSYptS9CqtxH5IH7lPlZrMsaugKeAa0HtoZSBZe5DmeTMx2m0qY464ZMzqarzw==
   dependencies:
-    tabbable "^5.2.0"
+    tabbable "^5.2.1"
 
-follow-redirects@^1.10.0:
-  version "1.13.3"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.3.tgz#e5598ad50174c1bc4e872301e82ac2cd97f90267"
-  integrity sha512-DUgl6+HDzB0iEptNQEXLx/KhTmDb8tZUHSeLqpnjpknR70H0nC2t9N73BK6fN4hOvJ84pKlIQVQ4k5FFlBedKA==
+follow-redirects@^1.14.0:
+  version "1.14.3"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.3.tgz#6ada78118d8d24caee595595accdc0ac6abd022e"
+  integrity sha512-3MkHxknWMUtb23apkgz/83fDoe+y+qr0TdgacGIA7bew+QLBo3vdgEN2xEsuXNivpFy4CyDhBBZnNZOtalmenw==
 
 for-in@^1.0.2:
   version "1.0.2"
@@ -10618,10 +10625,10 @@ symbol.prototype.description@^1.0.0:
     has-symbols "^1.0.1"
     object.getownpropertydescriptors "^2.1.2"
 
-tabbable@^5.2.0:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/tabbable/-/tabbable-5.2.0.tgz#4fba60991d8bb89d06e5d9455c92b453acf88fb2"
-  integrity sha512-0uyt8wbP0P3T4rrsfYg/5Rg3cIJ8Shl1RJ54QMqYxm1TLdWqJD1u6+RQjr2Lor3wmfT7JRHkirIwy99ydBsyPg==
+tabbable@^5.2.1:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/tabbable/-/tabbable-5.2.1.tgz#e3fda7367ddbb172dcda9f871c0fdb36d1c4cd9c"
+  integrity sha512-40pEZ2mhjaZzK0BnI+QGNjJO8UYx9pP5v7BGe17SORTO0OEuuaAwQTkAp8whcZvqon44wKFOikD+Al11K3JICQ==
 
 tailwindcss@2.2.7:
   version "2.2.7"

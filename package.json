@@ -26,7 +26,7 @@
   "dependencies": {
     "@vueuse/core": "5.2.0",
     "@vueuse/head": "0.6.0",
-    "@vueuse/integrations": "5.2.0",
+    "@vueuse/integrations": "6.3.2",
     "animejs": "3.2.1",
     "vue": "3.1.5",
     "vue-router": "4.0.10"
