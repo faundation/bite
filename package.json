@@ -52,7 +52,7 @@
     "postcss-preset-env": "6.7.0",
     "typescript": "4.3.5",
     "tailwindcss": "2.2.7",
-    "vite": "2.4.4",
+    "vite": "2.9.13",
     "vite-svg-loader": "2.1.1",
     "vue-loader": "16.4.1",
     "vue-svg-loader": "0.17.0-beta.2"
